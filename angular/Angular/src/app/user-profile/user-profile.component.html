@@ -1,0 +1,28 @@
+<app-nav-menu></app-nav-menu>
+<table *ngIf="userDetails" class="table-fill">
+    <thead>
+        <tr>
+            <th colspan="2" class="text-center">User Profile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td>{{userDetails.firstName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{userDetails.lastName}}</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>{{userDetails.email}}</td>
+        </tr>
+        <tr>
+            <td>Birth Date</td>
+            <td>{{userDetails.birthDate}}</td>
+        </tr>
+
+    </tbody>
+</table>
+<app-view></app-view>
